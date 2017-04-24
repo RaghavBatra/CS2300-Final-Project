@@ -1,16 +1,18 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Slabo 27px", serif;
+    font-family: "Gloria Hallelujah", cursive;
     font-size: 100%;
 }
 
 nav {
     display: block;
+    background-color: #000;
     overflow:hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 #logo_wrapper {
@@ -19,7 +21,9 @@ nav {
 }
 
 #logo_wrapper p {
+    color: #fff;
     font-size: 1.2em;
+    font-weight: bold;
     font-weight: normal;
     padding: 1.0em 1.0em 1.0em 2.0em;
     margin: 0;
@@ -47,7 +51,7 @@ li {
 }
 
 li a {
-    color: #000;
+    color: #fff;
     display: block;
     font-size: 1.2em;
     position: relative;
@@ -55,7 +59,7 @@ li a {
 }
 
 li a:before {
-    background-color: #000;
+    background-color: #fff;
     bottom: 0;
     content: "";
     height: 0.06em;
@@ -79,18 +83,38 @@ li a:hover:before {
 }
 
 #login_button {
-    border: 0.06em solid #000;
+    border: 0.06em solid #fff;
     border-radius: 1em;
-    margin: 0.6em auto;
-    padding: 0.4em 0;
+    margin: 0.8em auto;
+    padding: 0.2em 0;
     text-align: center;
     width: 60%;
 }
 
 #login_button a {
-    color: #000;
+    color: #fff;
     display: block;
     font-size: 1.2em;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+}
+
+#banner_wrapper {
+    display: block;
+    width: 100%;
+}
+
+#banner_wrapper:after {
+    content: "";
+    background: url("../images/banner.jpg");
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+#content_wrapper {
+    margin-top: 4.0em;
 }

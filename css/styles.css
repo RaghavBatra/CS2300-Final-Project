@@ -6,8 +6,8 @@ body {
 }
 
 nav {
-    display: block;
-    background-color: #000;
+    background-color: #ffffff;
+    box-shadow: 0 .04em #d3d3d3;
     overflow:hidden;
     position: fixed;
     top: 0;
@@ -21,12 +21,11 @@ nav {
 }
 
 #logo_wrapper p {
-    color: #fff;
+    color: #ff0000;
     font-size: 1.2em;
     font-weight: bold;
-    font-weight: normal;
-    padding: 1.0em 1.0em 1.0em 2.0em;
     margin: 0;
+    padding: 1.0em 2.0em 1.0em 2.0em;
 }
 
 #nav_wrapper {
@@ -35,6 +34,7 @@ nav {
 }
 
 ul {
+    padding-right: 1.0em;
     list-style-type: none;
     float: right;
     margin: 0;
@@ -46,7 +46,7 @@ li {
 }
 
 li a {
-    color: #fff;
+    color: #ff0000;
     display: block;
     font-size: 1.2em;
     position: relative;
@@ -54,10 +54,10 @@ li a {
 }
 
 li a:before {
-    background-color: #fff;
-    bottom: 0;
+    background-color: #ff0000;
+    bottom: -0.2em;
     content: "";
-    height: 0.06em;
+    height: 0.04em;
     position: absolute;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -72,7 +72,7 @@ li a:hover:before {
     -webkit-transform: scaleX(1);
 }
 
-#login_wrapper {
+/*#login_wrapper {
     float: right;
     width: 20%;
 }
@@ -180,4 +180,4 @@ li a:hover:before {
     font-size: 1.6em;
     margin: 0;
     padding-left: 2.0em;
-}
+}*/

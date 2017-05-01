@@ -25,5 +25,5 @@
         </nav>";
     }
 
-    display_navbar(array_reverse($navbar_items));
+    display_navbar($navbar_items);
 ?>

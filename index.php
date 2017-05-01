@@ -1,19 +1,4 @@
-<!doctype html>
-
-<html>
-<head>
-    <meta charset="utf-8">
-
-    <title>Cornell Food Science Club</title>
-
-    <meta name="description" content="Cornell Food Science Club">
-    <meta name="keywords" content="Cornell, Food, Science, Club">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Slabo+27px" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
-</head>
+<?php include 'php/head.php' ?>
 
 <body>
 
@@ -23,7 +8,6 @@
         </div>
 
         <div id="nav_wrapper">
-            <div id="links_wrapper">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -45,21 +29,14 @@
                     </li>
                 </ul>
             </div>
-
-            <div id="login_wrapper">
-                    <div id="login_button">
-                        <a href="">Login</a>
-                    </div>
-            </div>
-        </div>
     </nav>
 
-    <div id="home_wrapper">    
+    <!-- <div id="home_wrapper">    
         <div id="home_content_wrapper">
             <h1>Cornell Food Science Club</h2>
             <h2>We do more than just eat food...</h2>
         </div>
-    </div>
+    </div> -->
 
 </body>
 </html>

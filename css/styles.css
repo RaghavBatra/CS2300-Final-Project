@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Gloria Hallelujah", cursive;
+    font-family: "Raleway", sans-serif;
     font-size: 100%;
 }
 
@@ -32,11 +32,6 @@ nav {
 #nav_wrapper {
     float: right;
     width: 70%;
-}
-
-#links_wrapper {
-    float: left;
-    width: 80%;
 }
 
 ul {

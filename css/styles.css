@@ -1,8 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
+body, html {
     font-family: "Raleway", sans-serif;
     font-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -33,19 +33,19 @@ nav {
     width: 70%;
 }
 
-ul {
+#nav_wrapper ul {
     padding-right: 1.0em;
     list-style-type: none;
     float: right;
     margin: 0;
 }
 
-li {
+#nav_wrapper li {
     display: inline-block;
     padding: 1.0em 1.0em;
 }
 
-li a {
+#nav_wrapper li a {
     color: #ff0000;
     display: block;
     font-size: 1.2em;
@@ -53,7 +53,7 @@ li a {
     text-decoration: none;
 }
 
-li a:before {
+#nav_wrapper li a:before {
     background-color: #ff0000;
     bottom: -0.2em;
     content: "";
@@ -66,7 +66,7 @@ li a:before {
     width: 100%;
 }
 
-li a:hover:before {
+#nav_wrapper li a:hover:before {
     transform: scaleX(1);
     visibility: visible;
     -webkit-transform: scaleX(1);
@@ -74,8 +74,11 @@ li a:hover:before {
 
 .section_wrapper {
     display: block;
-    height: 50%;
     width: 100%;
+}
+
+#banner_wrapper {
+    height: 50%;
 }
 
 #banner_wrapper img {
@@ -84,7 +87,9 @@ li a:hover:before {
 }
 
 #welcome_wrapper {
+    height: 50%;
     text-align: center;
+    padding-bottom: 2.0em;
 }
 
 #welcome_wrapper h1 {
@@ -128,112 +133,69 @@ li a:hover:before {
     transition: 0.4s ease;
 }
 
-/*#login_wrapper {
+#about_wrapper {
+    color: #ff0000;
+    background-color:rgba(255, 0, 0, 0.1);
+}
+
+#about_wrapper h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 1.2em;
+    width: 86%;
+}
+
+#about_wrapper h2 {
+    color: #000000;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    margin: auto;
+    padding: 0.6em 0 2.0em 0;
+    width: 86%;
+}
+
+span {
+    color: #ff0000;
+}
+
+#footer {
+   font-size: 1.2em;
+}
+
+/*#facebook_wrapper img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+}*/
+
+#credits_wrapper {
+    display: inline-block;
+    padding: 0 1.0em;
+    width: 50%;
+}
+
+#credits_wrapper p {
+    color: #000000;
+    font-size: 0.8em;
+    padding: 1.0em;
+}
+
+#login_wrapper {
     float: right;
-    width: 20%;
+    padding: 1.0em 0;
+    text-align: center;
+    width: 10%;
 }
 
 #login_button {
-    border: 0.06em solid #fff;
-    border-radius: 1em;
-    margin: 0.8em auto;
-    padding: 0.2em 0;
+    color: #ff0000;
+    border: 0.02em solid #ff0000;
+    border-radius: 1.0em;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: auto;
+    padding: 0.6em 0.2em;
     text-align: center;
     width: 60%;
 }
-
-#login_button a {
-    color: #fff;
-    display: block;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-#home_wrapper {
-    display: block;
-    width: 100%;
-}
-
-#home_wrapper:after {
-    content: "";
-    background: url("../images/home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -2;
-}
-
-#home_content_wrapper {
-    background-color: #000;
-    margin: auto;
-    margin-top: 10.0em;
-    opacity: 0.8;
-    padding-bottom: 1.4em;
-    text-align: center;
-    width: 80%;
-}
-
-#home_content_wrapper h1 {
-    color: #f00;
-    font-size: 5.0em;
-    margin: 0;
-}
-
-#home_content_wrapper h2 {
-    color: #f00;
-    font-size: 3.0em;
-    margin: 0;
-}
-
-#about_wrapper {
-    display: block;
-    width: 100%;
-}
-
-#about_wrapper:after {
-    content: "";
-    background: url("../images/about.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    z-index: -2;
-}
-
-#about_content_wrapper {
-    margin: auto;
-    margin-top: 6.0em;
-    width: 80%;
-}
-
-#about_content_wrapper h1 {
-    color: #fff;
-    font-size: 3.0em;
-    margin: 0;
-    text-decoration: underline;
-}
-
-#about_content_wrapper h2 {
-    color: #fff;
-    font-size: 2.0em;
-    margin: 0;
-}
-
-#about_content_wrapper p {
-    color: #fff;
-    font-size: 1.6em;
-    margin: 0;
-    padding-left: 2.0em;
-}*/

@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='js/jquery.imageslider.js'></script>
+    <script src='js/main.js'></script>
 </head>
 
 <body>
@@ -36,8 +36,30 @@
     </div>
 
     <div id='about_wrapper' class='section_wrapper'>
-        
+        <h1>Who are we?</h1>
+        <h2>We are a community of Cornell University students who are 
+        passionate about anything related to food! Our <span>Vision</span> is to
+        <span>Support</span> students interested in the food industry, food 
+        sicence, and/or the culinary arts, <span>Promote</span> club membership 
+        across various majors, and <span>Advocate</span> opportunities in the 
+        food industry to students across campus.</h2>
     </div>
 
+    <div id='footer' class='section_wrapper'>
+        <!-- <div id='facebook_wrapper'>
+            <a href='https://www.facebook.com/groups/CornellFDSCClub/'>
+                <img src='images/facebook.jpg' alt='facebook'>
+            </a>
+        </div> -->
+        
+        <div id='credits_wrapper'>
+            <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>
+        </div>
+            
+        <div id='login_wrapper'>
+            <div id='login_button'>Login</div>
+        </div>
+    </div>
+    
 </body>
 </html>

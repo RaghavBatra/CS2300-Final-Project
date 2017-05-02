@@ -45,7 +45,7 @@
                 echo "<form method='post'>
                     <h1>Login with your credentials</h1>
                     <input type='text' name='username' placeholder='Username' required>
-                    <input type='text' name='password' placeholder='Password' required>
+                    <input type='password' name='password' placeholder='Password' required>
                     <input type='submit' name='login' value='Login'>    
                 </form>";
             }

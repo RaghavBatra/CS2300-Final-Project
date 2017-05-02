@@ -13,7 +13,7 @@
     function display_navbar($navbar_items) {
         echo "<nav>
             <div id='logo_wrapper'>
-                <p>Cornell University Food Science Club</p>
+                <p>Cornell Food Science Club</p>
             </div>
             <div id='nav_wrapper'>
                 <ul>";

@@ -72,6 +72,24 @@ li a:hover:before {
     -webkit-transform: scaleX(1);
 }
 
+#slider_container {
+    height: 50%;
+}
+.my-slider {
+    height: 50%;
+    margin: 0;
+    width: 100%;
+}
+
+.my-slider ul {
+    height: 100%;
+    overflow: hidden;
+}
+
+.my-slider li {
+    float: left;
+}
+
 /*#login_wrapper {
     float: right;
     width: 20%;

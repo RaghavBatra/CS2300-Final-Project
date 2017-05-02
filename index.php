@@ -4,6 +4,18 @@
 
     <?php include 'includes/navbar.php' ?>
 
+    <!-- 
+        anime.js framework may be used in place of current static banner
+        ul id = image_slider
+            li img
+            li img
+            ...
+
+        /* using anime.js framework to create image slider */
+        on page ready
+            image_slider.slide(true, 1000, repeat);
+    -->
+
     <div id='banner_wrapper' class='section_wrapper'>
         <!-- Image adapted from http://www.icfsne.com/2016/home -->
         <img src='images/banner.jpg' alt='banner'>

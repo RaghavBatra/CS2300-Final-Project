@@ -219,7 +219,7 @@ span {
     font-size: 2.0em;
 }
 
-input[type='text'] {
+input[type='text'], input[type='password'] {
     padding: 1.0em;
     width: 30%;
 }

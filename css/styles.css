@@ -224,6 +224,11 @@ input[type='text'] {
     width: 30%;
 }
 
+input[type='password'] {
+    padding: 1.0em;
+    width: 30%;
+}
+
 input[type='submit'] {
     padding: 1.0em;
     width: 20%;

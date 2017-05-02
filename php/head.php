@@ -2,6 +2,8 @@
 /* Included at the head of every page.
  * Contains the html doctype declaration and head tag with meta data about the 
  * website */
+session_start();
+
 echo "<!doctype html>
 
 <html>
@@ -18,7 +20,6 @@ echo "<!doctype html>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script type='text/javascript' src='jquery.simplyscroll.js'></script>
-	<link rel='stylesheet' href='jquery.simplyscroll.css' media='all' type='text/css'>
+    <script src='js/main.js'></script>
 </head>"
 ?>

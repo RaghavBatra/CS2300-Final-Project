@@ -3,10 +3,11 @@
      * their respective file names */
     $navbar_items = array(
         'Home' => 'index.php',
-        'Events' => 'schedule.php',
+        'Events' => 'events.php',
         'Members' => 'members.php',
-        'Photos' => 'gallery.php',
-        'Contact Us' => 'contact.php'
+        'Photos' => 'photos.php',
+        'Contact Us' => 'contact.php',
+        'Login' => 'login.php'
     );
 
     /* Displays the navbar with the items listed in $navbar_items */

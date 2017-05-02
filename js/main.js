@@ -17,4 +17,9 @@ $(document).ready(function() {
       });
     }
   });
+
+  $("#login_button").on('click', function(event) {
+    event.preventDefault();
+    alert("Temporarily not working! Please use the login form found in the navbar");
+  });
 });

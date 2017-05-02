@@ -1,10 +1,10 @@
-<?php include 'php/head.php' ?>
+<?php include 'includes/head.php' ?>
 
 <body>
 
     <?php 
         require_once 'config.php';
-        include 'php/navbar.php';
+        include 'includes/navbar.php';
         // $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME); 
     ?>
 

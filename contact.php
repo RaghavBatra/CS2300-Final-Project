@@ -1,8 +1,8 @@
-<?php include 'php/head.php' ?>
+<?php include 'includes/head.php' ?>
 
 <body>
 
-    <?php include 'php/navbar.php'; ?>
+    <?php include 'includes/navbar.php'; ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
         <!-- Image adapted from http://www.icfsne.com/2016/home -->

@@ -36,6 +36,30 @@
         <div id='login_wrapper'>
             <div id='login_button'><a href="">Login</a></div>
         </div>
+
+        <!--
+            /* jQuery code for login button event handler */
+            if login button clicked
+                slide up login in window (will replace login page)
+
+            /* login window template */
+            login div:
+                form (post):
+                    input (text box) - username
+                    input (text box) - password
+                    input (submit) - login
+
+            /* php code to execute login */
+            if login = true
+                validate user input (username and password)
+                write prepared statement
+                bind parameters
+                execute prepared statement
+                if login successful
+                    set logged user as username
+                else
+                    display error message
+        -->
     </div>
 </body>
 </html>

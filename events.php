@@ -17,5 +17,16 @@
         <h2>List view and calendar view of events to be implemented!</h2>
     </div>
 
+    <!--
+        /* Google calendar plugin supports list, day, week, and month views */
+        iframe:
+            Google calendar
+
+        /* jQuery code for onclick events */
+        if event clicked then
+            connect to database
+            query the database for event with same title and date as selected event
+            display information on that event
+    -->
 </body>
 </html>

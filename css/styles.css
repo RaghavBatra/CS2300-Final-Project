@@ -243,3 +243,25 @@ form {
     text-align: center;
     padding-bottom: 2.0em;
 }
+
+#search {
+    padding: 1em;
+    text-align: center;
+}
+
+#search_grid {
+    padding: 2em;
+}
+
+.search_block {
+    display: inline-block;
+    margin: 5em;
+    margin-top: 2em;
+}
+
+.search_display {
+    height: 15em;
+    width: 15em;
+    display: inline;
+
+}

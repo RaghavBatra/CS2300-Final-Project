@@ -50,7 +50,8 @@
                 else {
                     $imageFilePath = $filePath;
                 }
-                echo "<a href = 'images/$imageFilePath'  data-lightbox='album' data-title=$title> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'></a>";
+                $captionText = $title;
+                echo "<a href = 'images/$imageFilePath'  data-lightbox='album' data-title=$captionText> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'></a>";
                 echo "</div>";    
         
             }
@@ -99,16 +100,17 @@
                     
                     while($stmt2->fetch()) { 
                 
-                        echo "<div class = 'search_block'>";
-                        echo "<p> <b>" . $title2 . "</b> </p>";
-                        if (empty($filePath2)) {
-                            $imageFilePath2 = 'album_placeholder.png';
-                        }
-                        else {
-                            $imageFilePath2 = $filePath2;
-                        }
-                        echo "<a href = '#'> <img src = 'images/$imageFilePath2' alt = 'images/$imageFilePath2' class = 'search_display'></a>";
-                        echo "</div>";    
+                    echo "<div class = 'search_block'>";
+                    echo "<p> <b>" . $title2 . "</b> </p>";
+                    if (empty($filePath2)) {
+                        $imageFilePath2 = 'album_placeholder.png';
+                    }
+                    else {
+                        $imageFilePath2 = $filePath2;
+                    }
+                    echo "<a href = 'images/$imageFilePath2'  data-lightbox='album' data-title=$title> <img src = 'images/$imageFilePath2' alt = 'images/$imageFilePath2' class = 'search_display'></a>";
+                    echo "</div>";    
+                    echo "</div>";    
                     }
                 }
             }

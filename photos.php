@@ -42,7 +42,7 @@
     <?php
     
     if (!isset($_POST['search']) or empty($_POST['search'])) {
-        echo "<form action='' method='post' id='search'>
+        echo "<form action='' method='post' id='search_form'>
                     <input type='text' name='search' placeholder ='Search'>
                     <input type='submit' name='submit' value = 'Submit'>    
         </form>";
@@ -61,7 +61,8 @@
                 else {
                     $imageFilePath =  $row["coverImageFilePath"];
                 }
-                echo "<a href = #> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> </a>";
+                $currentAlbumID = $row["albumID"];
+                echo "<a href = 'images.php?albumID=$currentAlbumID'> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> </a>";
                 echo "</div>";    
             }
             echo "</div>";
@@ -69,12 +70,12 @@
     }
     
     else {
-        echo "<form action='' method='post' id='search'>
+        echo "<form action='' method='post' id='search_form'>
                     <input type='text' name='search' placeholder ='Search'>
                     <input type='submit' name='submit' value = 'Submit'>    
         </form>";
         
-        $query = "SELECT title, credits, coverImageFilePath FROM albums WHERE title REGEXP ? ";
+        $query = "SELECT albumID, title, credits, coverImageFilePath FROM albums WHERE title REGEXP ? ";
         
         $stmt = $mysqli->stmt_init();
         
@@ -83,7 +84,7 @@
             $searchInput = htmlentities(filter_input(INPUT_POST, 'search', FILTER_SANITIZE_STRING));
             $stmt->execute();
             $stmt->store_result();
-            $stmt->bind_result($title, $credits, $coverImageFilePath);
+            $stmt->bind_result($albumID, $title, $credits, $coverImageFilePath);
         }
         
         if ($stmt->num_rows > 0) { 
@@ -98,14 +99,14 @@
                 else {
                     $imageFilePath = $coverImageFilePath;
                 }
-                echo "<a href = #> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> </a>";
+                echo "<a href = 'images.php?albumID=$albumID'> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> </a>";
                 echo "</div>";    
             }
         echo "</div>";        
         }
         
         else {
-            echo " <h2> No results! </h2>";
+            echo " <h2> No albums found </h2>";
         }
     }
         

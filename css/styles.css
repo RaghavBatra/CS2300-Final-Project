@@ -244,10 +244,12 @@ form {
     padding-bottom: 2.0em;
 }
 
-#search {
+#search_form {
     padding: 1em;
     text-align: center;
     margin-bottom: 0em;
+    background-color: orange;
+    border-radius: 1em;
 }
 
 #search_grid {
@@ -260,7 +262,7 @@ form {
     margin-top: 0em;
 }
 
-#search_grid > p {
+#search_grid p {
     text-align: center;
 }
 
@@ -277,5 +279,5 @@ h2 {
 }
 
 .search_display:hover {
-    opacity: 0.5;
+    opacity: 0.75;
 }

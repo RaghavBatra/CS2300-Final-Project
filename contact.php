@@ -21,7 +21,7 @@
         
 	<div id='welcome_wrapper' class='section_wrapper'>
         <?php
-			$action=$_REQUEST['action'];
+			$action = ( array_key_exists( 'action', $_REQUEST) ? $_REQUEST['action'] : "" );
 			if ($action=="")    /* display the contact form */
    				{
     	?>

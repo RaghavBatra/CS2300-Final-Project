@@ -50,7 +50,7 @@
                 else {
                     $imageFilePath = $filePath;
                 }
-                echo "<a href = '#'> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'></a>";
+                echo "<a href = 'images/$imageFilePath'  data-lightbox='album' data-title=$title> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'></a>";
                 echo "</div>";    
         
             }
@@ -123,6 +123,7 @@
 
     $mysqli->close();
     ?>
+
 
 </body>
 </html>

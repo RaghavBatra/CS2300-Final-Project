@@ -247,6 +247,7 @@ form {
 #search {
     padding: 1em;
     text-align: center;
+    margin-bottom: 0em;
 }
 
 #search_grid {
@@ -255,13 +256,26 @@ form {
 
 .search_block {
     display: inline-block;
-    margin: 5em;
-    margin-top: 2em;
+    margin: 4.5em;
+    margin-top: 0em;
+}
+
+#search_grid > p {
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
 }
 
 .search_display {
     height: 15em;
     width: 15em;
     display: inline;
+    box-shadow: 5px 5px 5px #d3d3d3;
+}
 
+.search_display:hover {
+    opacity: 0.5;
 }

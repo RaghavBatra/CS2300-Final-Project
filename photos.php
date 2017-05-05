@@ -34,14 +34,14 @@
         /* Default display list of albums similar to P3 */
         Albums div:
             Table:
-                4 albums per row
+                3 albums per row
                 Clicking album generates custom page that displays images in album same as P3
                 php code needed to generate table (copy from P3)
     -->
 
     <?php
     
-    if (!isset($_POST['search'])) {
+    if (!isset($_POST['search']) or empty($_POST['search'])) {
         echo "<form action='' method='post' id='search'>
                     <input type='text' name='search' placeholder ='Search'>
                     <input type='submit' name='submit' value = 'Submit'>    
@@ -54,15 +54,14 @@
         if ($albums->num_rows > 0) {
             while ($row = $albums->fetch_assoc()) {
                 echo "<div class = 'search_block'>";
-                echo "<p> <b> Album name: " . $row["title"] . "</b> </p>";
-                echo "<p> <b> Album credits: " . $row["coverImageFilePath"] . "</b> </p>";
+                echo "<p> <b>" . $row["title"] . "</b> </p>";
                 if (empty($row['coverImageFilePath'])) {
                     $imageFilePath = 'album_placeholder.png';
                 }
                 else {
                     $imageFilePath =  $row["coverImageFilePath"];
                 }
-                echo "<img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> ";
+                echo "<a href = #> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> </a>";
                 echo "</div>";    
             }
             echo "</div>";
@@ -70,7 +69,12 @@
     }
     
     else {
-        $query = "SELECT * FROM albums WHERE title REGEXP ? ";
+        echo "<form action='' method='post' id='search'>
+                    <input type='text' name='search' placeholder ='Search'>
+                    <input type='submit' name='submit' value = 'Submit'>    
+        </form>";
+        
+        $query = "SELECT title, credits, coverImageFilePath FROM albums WHERE title REGEXP ? ";
         
         $stmt = $mysqli->stmt_init();
         
@@ -79,29 +83,29 @@
             $searchInput = htmlentities(filter_input(INPUT_POST, 'search', FILTER_SANITIZE_STRING));
             $stmt->execute();
             $stmt->store_result();
+            $stmt->bind_result($title, $credits, $coverImageFilePath);
         }
         
         if ($stmt->num_rows > 0) { 
             echo "<div id = 'search_grid'>";
-            while($row = $stmt->fetch()) { 
+            while($stmt->fetch()) { 
             
                 echo "<div class = 'search_block'>";
-                echo "<p> <b> Album name: " . $row["title"] . "</b> </p>";
-                echo "<p> <b> Album credits: " . $row["coverImageFilePath"] . "</b> </p>";
-                if (empty($row['coverImageFilePath'])) {
+                echo "<p> <b>" . $title . "</b> </p>";
+                if (empty($coverImageFilePath)) {
                     $imageFilePath = 'album_placeholder.png';
                 }
                 else {
-                    $imageFilePath =  $row["coverImageFilePath"];
+                    $imageFilePath = $coverImageFilePath;
                 }
-                echo "<img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> ";
+                echo "<a href = #> <img src = 'images/$imageFilePath' alt = 'images/$imageFilePath' class = 'search_display'> </a>";
                 echo "</div>";    
             }
         echo "</div>";        
         }
         
         else {
-            echo "No results!";
+            echo " <h2> No results! </h2>";
         }
     }
         

@@ -50,7 +50,7 @@
 				    $from="From: $name<$email>\r\nReturn-path: $email";
 			        $subject="Message sent using your contact form";
 					// mail("spencerweiss123@gmail.com", $subject, $message, $from);
-					echo "Email sent!";
+					echo "Thanks for reaching out! We'll be sure to get back to you as soon as possible.";
 			    }
 		    }  
 		?>

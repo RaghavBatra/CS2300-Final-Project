@@ -14,8 +14,12 @@
     </div>
 
     <div id='welcome_wrapper' class='section_wrapper'>
-        <h2>List view and calendar view of events to be implemented!</h2>
+        <h2>Check out our calendar of events!</h2>
     </div>
+
+	<iframe src="https://calendar.google.com/calendar/embed?src=cornell.edu_0nicem4o3b27rf2hm9fdks8oj4%40group.calendar.google.com&ctz=America/New_York" 
+	style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+	</iframe>
 
     <!--
         /* Google calendar plugin supports list, day, week, and month views */

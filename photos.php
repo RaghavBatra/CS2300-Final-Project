@@ -106,7 +106,7 @@
         }
         
         else {
-            echo " <h2> No albums found </h2>";
+            echo " <h2> No results! </h2>";
         }
     }
         

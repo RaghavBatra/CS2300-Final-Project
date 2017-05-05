@@ -60,8 +60,7 @@
         else {
             echo " <h2> No images found! </h2>";
         }
-    }
-    
+    }  
     else {
         
         $query = "SELECT imageID, title, filePath, dateCreated, dateModified, credits FROM images WHERE title REGEXP ?";
@@ -120,6 +119,7 @@
             echo " <h2> No images found </h2>";
         }
     }
+  
 
     $mysqli->close();
     ?>

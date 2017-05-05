@@ -10,7 +10,10 @@
     </div>
 
     <div id='welcome_wrapper' class='section_wrapper'>
-        <h2>Contact form to be implemented!</h2>
+        <h2>Contact us!</h2>
+        <p> We want to hear from you, especially if you're interested in joining.
+    	Please feel free to reach out <br> to us using the form below or come to any
+    	information sessions or meetings you hear about! </p>
     </div>
 
 
@@ -46,7 +49,7 @@
 			    else {
 				    $from="From: $name<$email>\r\nReturn-path: $email";
 			        $subject="Message sent using your contact form";
-					// mail("youremail@yoursite.com", $subject, $message, $from);
+					// mail("spencerweiss123@gmail.com", $subject, $message, $from);
 					echo "Email sent!";
 			    }
 		    }  

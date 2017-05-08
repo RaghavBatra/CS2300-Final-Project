@@ -72,6 +72,8 @@ nav {
     -webkit-transform: scaleX(1);
 }
 
+/* Home */
+
 .section_wrapper {
     display: block;
     width: 100%;
@@ -155,19 +157,13 @@ nav {
     width: 86%;
 }
 
-span {
+#about_wrapper h2 span {
     color: #ff0000;
 }
 
 #footer {
    font-size: 1.2em;
 }
-
-/*#facebook_wrapper img {
-    display: table-cell;
-    vertical-align: middle;
-    width: 30%;
-}*/
 
 #credits_wrapper {
     display: inline-block;
@@ -206,6 +202,54 @@ span {
     text-decoration: none;
 }
 
+/* Members */
+
+#executives_wrapper, #members_wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+#executives_wrapper h1, #members_wrapper h1 {
+    color: #ff0000;
+    font-size: 2.0em;
+}
+
+.table_row {
+    display: block;
+    float:; left;
+    width: 100%;
+}
+
+.profile_wrapper {
+    display: inline-block;
+    padding: 2%;
+    text-align: center;
+    width: 29%;
+}
+
+.profile_wrapper img {
+    border-radius: 50%;
+    width: 60%;
+}
+
+.profile_wrapper h2 {
+    color: #ff0000;
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.profile_wrapper h3 {
+    color: #000000;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.profile_wrapper h4 {
+    color: #000000;
+    font-size: 1.0em;
+    margin: 0;
+}
+
 /* Login temporary styling */
 
 #login_form_wrapper {
@@ -234,10 +278,6 @@ input[type='submit'] {
     width: 20%;
 }
 
-form {
-    border: 3px solid #f1f1f1;
-}
-
 #contact {
     height: 50%;
     text-align: center;
@@ -248,8 +288,7 @@ form {
     padding: 1em;
     text-align: center;
     margin-bottom: 0em;
-    background-color: orange;
-    border-radius: 1em;
+    background-color: #fff2e6;
 }
 
 #search_grid {
@@ -282,6 +321,6 @@ h2 span {
     opacity: 0.75;
 }
 
-.view-cap, .view-container-border { background-color:black; }
+/*.view-cap, .view-container-border { background-color:black; }
 .mv-daynames-table { color:white; background:black; }
-.mv-event-container { border-top:1px solid black; }
+.mv-event-container { border-top:1px solid black; }*/

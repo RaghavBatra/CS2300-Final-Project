@@ -126,6 +126,5 @@
     $mysqli->close();
     ?>
 
-
 </body>
 </html>

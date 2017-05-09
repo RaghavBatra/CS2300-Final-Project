@@ -322,6 +322,64 @@ h2 span {
     opacity: 0.75;
 }
 
+/* Companies Wrapper */
+
+#companies_wrapper, #company_wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+#companies_wrapper h1, #company_wrapper h1 {
+    color: #ff0000;
+    font-size: 2.0em;
+}
+
+.table_row {
+    display: block;
+    float:; left;
+    padding-bottom: 1.0em;
+    width: 100%;
+}
+
+.prof_wrapper {
+    display: inline-block;
+    padding: 2%;
+    text-align: center;
+    width: 29%;
+    box-shadow: 5px 5px 5px #d3d3d3;
+}
+
+.prof_wrapper img {
+    width: 60%;
+}
+
+.prof_wrapper:hover img {
+    opacity: 0.75;
+	blur: 3px;
+}
+
+.prof_wrapper h2 {
+    color: #ff0000;
+    font-size: 1.6em;
+    margin: 0;
+    padding-top: 1.0em;
+}
+
+#companies_wrapper h2, #prof_wrapper1 h2, #prof_wrapper2 h2 {
+    color: #ff0000;
+    font-size: 1.6em;
+    margin: 0;
+    padding-top: 1.0em;
+    text-align: center;
+}
+
+/* alternative footer */
+
+#alt_footer {
+    font-size: 1.2em;
+	background-color:rgba(255, 0, 0, 0.1);
+}
+
 /*.view-cap, .view-container-border { background-color:black; }
 .mv-daynames-table { color:white; background:black; }
 .mv-event-container { border-top:1px solid black; }*/

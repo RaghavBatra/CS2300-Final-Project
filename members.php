@@ -68,6 +68,16 @@
     <div id='members_wrapper' class='section_wrapper'>
         <h1>Club Members</h1>
     </div>
+    
+    <div id='alt_footer' class='section_wrapper'>
+        <div id='credits_wrapper'>
+            <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>
+        </div>
+            
+        <div id='login_wrapper'>
+            <div id='login_button'><a href="">Login</a></div>
+        </div>
+    </div>
 
 </body>
 </html>

@@ -49,7 +49,7 @@
 			if (($name=="")||($email=="")||($message==""))
 			$from="From: $name<$email>\r\nReturn-path: $email";
 			$subject="Message sent by $name about the food science club!";
-			mail("spencerc.weiss@gmail.com", $subject, $message, $from);
+			//mail("spencerc.weiss@gmail.com", $subject, $message, $from);
 		}
 	?>
 	

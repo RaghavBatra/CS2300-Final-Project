@@ -1,4 +1,4 @@
-<?php include 'includes/head.php' ?>
+<?php include 'includes/contact_head.php' ?>
 
 <body>
 
@@ -9,52 +9,50 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
-    <div id='welcome_wrapper' class='section_wrapper'>
+    <div id='contact_wrapper' class='section_wrapper'>
         <h2>Contact us!</h2>
-        <p> We want to hear from you, especially if you're interested in joining.
-    	Please feel free to reach out <br> to us using the form below or come to any
-    	information sessions or meetings you hear about! </p>
     </div>
-
-
         
-        
-	<div id='welcome_wrapper' class='section_wrapper'>
-        <?php
-			$action = ( array_key_exists( 'action', $_REQUEST) ? $_REQUEST['action'] : "" );
-			if ($action=="")    /* display the contact form */
-   				{
-    	?>
-			    <form  action="" method="POST" enctype="multipart/form-data">
-			    <input type="hidden" name="action" value="submit">
-			    Your name:<br>
-			    <input name="name" type="text" value="" size="30"/><br>
-			    Your email:<br>
-			    <input name="email" type="text" value="" size="30"/><br>
-			    Your message:<br>
-			    <textarea name="message" rows="7" cols="30"></textarea><br>
-			    <input type="submit" value="Send email"/>
-			    </form>
-		<?php
-			    } 
-			else                /* send the submitted data */
-    			{
-			    $name=$_REQUEST['name'];
-			    $email=$_REQUEST['email'];
-			    $message=$_REQUEST['message'];
-			    if (($name=="")||($email=="")||($message==""))
-			        {
-					echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-				    }
-			    else {
-				    $from="From: $name<$email>\r\nReturn-path: $email";
-			        $subject="Message sent using your contact form";
-					// mail("spencerweiss123@gmail.com", $subject, $message, $from);
-					echo "Thanks for reaching out! We'll be sure to get back to you as soon as possible.";
-			    }
-		    }  
-		?>
+	<div id='main' class='section_wrapper2'>
+		<form class="cmxform" id="commentForm" method="POST" 
+		action="contact.php" novalidate="novalidate">
+		<fieldset>
+		<legend> We want to hear from you, especially if you're interested in joining.
+    	Please feel free to reach out <br> to us using the form below or come to any
+    	information sessions or meetings you hear about!</legend>
+		<p>
+		<label for="cname"> Full Name (Required): </label> <br>
+		<input id="cname" name="name" minlength="2" type="text" required="" 
+		aria-required="true" class="error" aria-invalid="true">
+		<label id="cname-error" class="error" for="cname"></label>
+		</p>
+		<p>
+		<label for="cemail"> E-Mail (Required): </label> <br>
+		<input id="cemail" type="email" name="email" required="" aria-required="true">
+		</p>
+		<p>
+		<label for="ccomment">Your message (Required):</label> <br>
+		<textarea id="ccomment" name="comment" required="" aria-required="true"></textarea>
+		</p>
+		<p>
+		<input class="submit" type="submit" value="Submit">
+		</p>
+		</fieldset>
+		</form>
 	</div>
+	
+	<?php
+		if (!empty($_POST)){
+			$name=$_REQUEST['name'];
+			$email=$_REQUEST['email'];
+			$message=$_REQUEST['comment'];
+			if (($name=="")||($email=="")||($message==""))
+			$from="From: $name<$email>\r\nReturn-path: $email";
+			$subject="Message sent by $name about the food science club!";
+			mail("spencerc.weiss@gmail.com", $subject, $message, $from);
+		}
+	?>
+	
 	<div id='alt_footer' class='section_wrapper'>
         <div id='credits_wrapper'>
             <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>

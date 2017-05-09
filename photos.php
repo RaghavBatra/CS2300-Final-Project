@@ -17,28 +17,6 @@
         <h2>Photo gallery</h2>
     </div>
 
-    <!--
-        /* Search form over multiple fields similar to P3 */
-        form (post):
-
-
-        /* php code that querys the database for images/albums that match the search parameters */
-        if submit = true then
-            connect to database
-            validate input (image name, album name, etc.)
-            write prepared statement
-            bind parameters
-            execute prepared statement
-            display search results
-
-        /* Default display list of albums similar to P3 */
-        Albums div:
-            Table:
-                3 albums per row
-                Clicking album generates custom page that displays images in album same as P3
-                php code needed to generate table (copy from P3)
-    -->
-
     <?php
     
     if (!isset($_POST['search']) or empty($_POST['search'])) {

@@ -327,6 +327,7 @@ h2 span {
 #companies_wrapper, #company_wrapper {
     margin: auto;
     width: 80%;
+    padding-bottom: 20px;
 }
 
 #companies_wrapper h1, #company_wrapper h1 {
@@ -384,8 +385,10 @@ h2 span {
 
 .section_wrapper2 {
     display: block;
-    width: 100%;
+    width: 60%;
+    Margin: 0 auto;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 #contact_wrapper {

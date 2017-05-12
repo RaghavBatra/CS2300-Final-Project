@@ -377,6 +377,7 @@ h2 span {
     font-size: 2.0em;
 }
 
+
 .table_row {
     display: block;
     float:; left;
@@ -396,10 +397,23 @@ h2 span {
     width: 60%;
 }
 
-.prof_wrapper:hover img {
+.prof_wrapper:hover img:first-child{
+	display:none
+}
+
+.prof_wrapper:hover img:last-child{
+	display:inline-block
+}
+
+.hide {
+	display:none
+}
+
+/*.prof_wrapper:hover img {
+    content: url('http://www.furrytalk.com/wp-content/uploads/2010/05/2.jpg');
     opacity: 0.75;
 	blur: 3px;
-}
+}*/
 
 .prof_wrapper h2 {
     color: #ff0000;

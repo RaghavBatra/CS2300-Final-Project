@@ -530,3 +530,7 @@ h2 span {
 #label {
 	font-style: bold;
 }
+
+#ccomment {
+	max-width: 60%;
+}

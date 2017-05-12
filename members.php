@@ -54,6 +54,7 @@
                 $id = filter_input(INPUT_POST, 'select_edit', FILTER_SANITIZE_STRING);
                 unset($_POST['edit_member']);
                 unset($_POST['select_edit']);
+                unset($_POST['newphoto']);
                 $field_array = array();
                 foreach($_POST as $key => $value) {
                     if(!empty($value)) {
@@ -68,12 +69,16 @@
                     if($new_file['error'] == 0) {
                         $temp_name = $new_file['tmp_name'];
                         move_uploaded_file($temp_name, "images/$original_name");
-                        $value_list .= ", image_url = '$original_name'";
+                        if($value_list != '') {
+                            $value_list .= ', ';
+                        }
+                        $value_list .= "image_url = '$original_name'";
                     }
                     else {
                         echo "<p class='status'>Error: failed to update photo!</p><br>"; 
                     }
                 }
+
                 $sql = "UPDATE executives SET $value_list WHERE id = $id;";
                 if($mysqli->query($sql)) {
                     echo "<p class='status'>Member has been updated!</p><br>";
@@ -135,7 +140,7 @@
                         </form>
                     </div>
                     <div class='profile_wrapper'>
-                        <form method='post'>
+                        <form method='post' enctype='multipart/form-data'>
                             <select name='select_edit'>";
                 foreach($names as $id => $name) {
                     echo "<option value='$id'>$name</option>";

@@ -167,17 +167,9 @@
                     </div>";
             }   
             echo '</div></div>';
-        ?>
 
-    <div id='alt_footer' class='section_wrapper'>
-        <div id='credits_wrapper'>
-            <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>
-        </div>
-            
-        <div id='login_wrapper'>
-            <div id='login_button'><a href="">Login</a></div>
-        </div>
-    </div>
+            include 'includes/footer.php';
+        ?>
 
 </body>
 </html>

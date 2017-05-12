@@ -18,6 +18,7 @@ echo "<!doctype html>
     
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='js/main.js'></script>
+    <script src='js/members.js'></script>
     <script src='js/lightbox-plus-jquery.js'></script>
     <script src='js/lightbox.js'></script>
 

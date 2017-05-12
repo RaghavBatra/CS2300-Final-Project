@@ -56,19 +56,5 @@
         </div>
     </div>
 
-    <script>
-        $('.profile_wrapper').click(function(event) {
-            var id = $(this).attr('id');
-            if($('#' + id).find('.description_wrapper').css('display') == 'none') {
-                $('#' + id).find('.description_wrapper').slideDown('slow');
-                console.log("aSDF");
-            }
-            else {
-                $('#' + id).find('.description_wrapper').slideUp();
-                console.log("aSasddDF");
-            }
-        });
-    </script>
-
 </body>
 </html>

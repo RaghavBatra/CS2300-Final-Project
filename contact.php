@@ -21,17 +21,17 @@
     	Please feel free to reach out <br> to us using the form below or come to any
     	information sessions or meetings you hear about!</legend>
 		<p>
-		<label for="cname"> Full Name (Required): </label> <br>
+		<label for="cname"> Full Name: </label> <br>
 		<input id="cname" name="name" minlength="2" type="text" required="" 
 		aria-required="true" class="error" aria-invalid="true">
 		<label id="cname-error" class="error" for="cname"></label>
 		</p>
 		<p>
-		<label for="cemail"> E-Mail (Required): </label> <br>
+		<label for="cemail"> E-Mail: </label> <br>
 		<input id="cemail" type="email" name="email" required="" aria-required="true">
 		</p>
 		<p>
-		<label for="ccomment">Your message (Required):</label> <br>
+		<label for="ccomment">Your message:</label> <br>
 		<textarea id="ccomment" name="comment" required="" aria-required="true"></textarea>
 		</p>
 		<p>

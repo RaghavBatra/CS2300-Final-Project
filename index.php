@@ -24,6 +24,11 @@
                 }
             }
         }
+
+        else if(isset($_POST['logout'])) { // logout requested
+            unset($_SESSION['logged_user']); // successful logout
+            session_destroy();
+        }
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>

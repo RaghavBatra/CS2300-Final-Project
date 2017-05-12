@@ -191,22 +191,15 @@ nav {
     width: 20%;
 }
 
-#login_wrapper {
+#login_wrapper, #logout_wrapper, #subscribe_wrapper {
     float: right;
-}
-
-#subscribe_wrapper {
-    float: right;
-}
-
-#login_wrapper, #subscribe_wrapper {
     padding: 0.6em 1.4em 0.6em 0;
     text-align: center;
-
 }
 
-#login_button, #subscribe_button {
-    color: #ff0000;
+#login_button, #logout_button, #subscribe_button {
+    color: #000000;
+    background-color: transparent;
     border: 0.02em solid #ff0000;
     border-radius: 1.0em;
     display: inline-block;
@@ -222,7 +215,7 @@ nav {
     text-decoration: none;
 }
 
-#login_button a:hover, #subscribe_button a:hover{
+#login_button a:hover, #logout_button:hover, #subscribe_button a:hover {
     color: #ff0000;
     transition: 0.4s ease;
 }

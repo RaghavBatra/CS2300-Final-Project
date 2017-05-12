@@ -26,34 +26,64 @@
         <h2>Click Below View Relevant Information From Any of Our Partner Companies!</h2>
         <div class='table_row'>
             <div class='prof_wrapper'>
-				<a href = 'http://www.mars.com/global/science-and-innovation/science/food-safety'> <img src = 'images/Mars.jpg' alt = 'Mars'> </a>
+				<a href = 'http://www.mars.com/global/science-and-innovation/science/food-safety'> 
+					<img src = 'images/Mars_orange.png' alt = 'Mars'> 
+					<img src = 'images/Mars_grey.jpg' alt = 'Mars' class = 'hide' > 
+				</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'http://www.mondelezinternational.com/well-being'> <img src='images/mondelez.jpg' alt='Mondelez'> </a>
+            	<a href = 'http://www.mondelezinternational.com/well-being'> 
+            		<img src='images/mondelez_orange.jpg' alt='Mondelez'>
+            		<img src='images/mondelez_grey.jpg' alt='Mondelez' class = 'hide'>
+            	</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'https://www.hersheys.com/en_us/simple-ingredients.html'> <img src='images/hershey.jpg' alt='Hershey's'> </a>
+            	<a href = 'https://www.hersheys.com/en_us/simple-ingredients.html'> 
+            		<img src='images/hershey_orange.jpg' alt='Hershey's'>
+            		<img src='images/hershey_grey.jpg' alt='Hershey's' class = 'hide'> 
+            	</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'http://www.pepsico.com/live/content/type/story'> <img src='images/pepsico.jpg' alt='PepsiCo'> </a>
+            	<a href = 'http://www.pepsico.com/live/content/type/story'> 
+            		<img src='images/pepsico_orange.png' alt='PepsiCo'> 
+            		<img src='images/pepsico_grey.jpg' alt='PepsiCo' class = 'hide'> 
+            	</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'http://www.kraftheinzcompany.com/sustainability.html'> <img src='images/Kraft.jpg' alt='KraftHeinz'> </a>
+            	<a href = 'http://www.kraftheinzcompany.com/sustainability.html'> 
+      		      	<img src='images/Kraft_orange.png' alt='KraftHeinz'> 
+    	        	<img src='images/Kraft_grey.jpg' alt='KraftHeinz' class = 'hide'> 
+            	</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'http://galbanicheese.com/our-cheeses/'> <img src='images/sorrento.jpg' alt='Sorrento'> </a>
+            	<a href = 'http://galbanicheese.com/our-cheeses/'> 
+      		      	<img src='images/sorrento_orange.jpg' alt='Sorrento'> 
+      		      	<img src='images/sorrento_grey.jpg' alt='Sorrento' class = 'hide'> 
+            	</a>
             </div>
      	   <div class='prof_wrapper'>
-     	   		<a href = 'http://www.anheuser-busch.com/newsroom.html'> <img src='images/Busch.jpg' alt='Anheuser Busch'> </a>
+     	   		<a href = 'http://www.anheuser-busch.com/newsroom.html'> 
+     	   			<img src='images/Busch_orange.jpg' alt='Anheuser Busch'> 
+     	   			<img src='images/Busch_grey.jpg' alt='Anheuser Busch' class = 'hide'> 
+     	   		</a>
         	</div>
             <div class='prof_wrapper'>
-            	<a href = 'https://www.walmart.com/store/5240/whats-new'> <img src='images/walmart.jpg' alt='Walmart'> </a>
+            	<a href = 'https://www.walmart.com/store/5240/whats-new'> 
+            		<img src='images/walmart_orange.jpg' alt='Walmart'> 
+            		<img src='images/walmart_grey.jpg' alt='Walmart' class = 'hide'> 
+            	</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'http://ithacabeer.com/news/'> <img src='images/Beer.jpg' alt='Ithaca Beer Co'> </a>
+            	<a href = 'http://ithacabeer.com/news/'> 
+            		<img src='images/Beer_orange.png' alt='Ithaca Beer Co'> 
+            		<img src='images/Beer_grey.png' alt='Ithaca Beer Co' class = 'hide'> 
+            	</a>
             </div>
             <div class='prof_wrapper'>
-            	<a href = 'https://ithacahummus.com/press/'> <img src='images/hummus.jpg' alt='Ithaca Hummus'> </a>
+            	<a href = 'https://ithacahummus.com/press/'> 
+            		<img src='images/hummus_orange.png' alt='Ithaca Hummus'> 
+            		<img src='images/hummus_grey.png' alt='Ithaca Hummus' class = 'hide'> 
+            	</a>
             </div>
         </div>
     </div>

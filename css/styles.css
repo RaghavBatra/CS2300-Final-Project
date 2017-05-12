@@ -225,6 +225,7 @@ nav {
     display: inline-block;
     padding: 2%;
     text-align: center;
+    vertical-align: top;
     width: 29%;
 }
 
@@ -249,6 +250,13 @@ nav {
     color: #000000;
     font-size: 1.0em;
     margin: 0;
+}
+
+.description_wrapper {
+    display: none;
+    padding-top: 1.0em;
+    text-align: left;
+    width: 100%;
 }
 
 /* Login temporary styling */

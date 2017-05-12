@@ -5,7 +5,10 @@
     <?php 
         require_once 'config.php';
         include 'includes/navbar.php';
-        // $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME); 
+        $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+        if($mysqli->connect_error) { // terminate script if fail to connect with database
+            die("Connection failed: " . $mysqli->connect_error);
+        }
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
@@ -15,60 +18,34 @@
 
     <div id="executives_wrapper" class='section_wrapper'>
         <h1>Executive Board</h1>
-        <div class='table_row'>
-            <div class='profile_wrapper'>
-                <img src='images/president.jpg' alt='Halle Bershad'>
-                <h2>Halle Bershad</h2>
-                <h3>President</h3>
-                <h4>Class of 2017</h4>
-            </div>
-            <div class='profile_wrapper'>
-                <img src='images/vice_president.jpg' alt='Nayara Luna'>
-                <h2>Nayara Luna</h2>
-                <h3>Vice President</h3>
-                <h4>Class of 2019</h4>
-            </div>
-            <div class='profile_wrapper'>
-                <img src='images/secretary.jpg' alt='Sierra Jamir'>
-                <h2>Sierra Jamir</h2>
-                <h3>Secretary</h3>
-                <h4>Class of 2018</h4>
-            </div>
-        </div>
-        <div class='table_row'>
-            <div class='profile_wrapper'>
-                <img src='images/p4.jpg' alt='Sean Dolan'>
-                <h2>Sean Dolan</h2>
-                <h3>Treasurer</h3>
-                <h4>Class of 2019</h4>
-            </div>
-            <div class='profile_wrapper'>
-                <img src='images/p5.jpg' alt='Kaitlin Steinleitner'>
-                <h2>Kaitlin Steinleitner</h2>
-                <h3>Transfer Representative</h3>
-                <h4>Class of 2019</h4>
-            </div>
-            <div class='profile_wrapper'>
-                <img src='images/p6.jpg' alt='Morgan Dickens'>
-                <h2>Morgan Dickens</h2>
-                <h3>Community Outreach</h3>
-                <h4>Class of 2020</h4>
-            </div>
-        </div>
-        <div class='table_row'>
-            <div class='profile_wrapper'>
-                <img src='images/p7.jpg' alt='Morgan Smith'>
-                <h2>Morgan Smith</h2>
-                <h3>Community Outreach</h3>
-                <h4>Class of 2020</h4>
-            </div>
-        </div>
-    </div>
 
-    <div id='members_wrapper' class='section_wrapper'>
-        <h1>Club Members</h1>
-    </div>
-    
+        <?php
+            $query = 'SELECT * FROM executives';
+            $result = $mysqli->query($query);
+            $column_count = 0;
+            echo "<div class='table_row'>";
+            while($row = $result->fetch_assoc()) {
+                if($column_count === 3) {
+                    $column_count = 0;
+                    echo "</div><div class='table_row'>";
+                }
+                $id = $row['id'];
+                $name = $row['executive'];
+                $title = $row['title'];
+                $year = $row['grad_year'];
+                $description = $row['description'];
+                $image_url = 'images/' . $row['image_url'];
+                echo "<div id='$id' class='profile_wrapper'>
+                    <img src='$image_url' alt='$name'>
+                    <h2>$name</h2>
+                    <h3>$title</h3>
+                    <h4>Class of $year</h4>
+                    <div class='description_wrapper'>$description</div>
+                </div>";
+            }
+            echo '</div></div>';
+        ?>
+
     <div id='alt_footer' class='section_wrapper'>
         <div id='credits_wrapper'>
             <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>
@@ -78,6 +55,20 @@
             <div id='login_button'><a href="">Login</a></div>
         </div>
     </div>
+
+    <script>
+        $('.profile_wrapper').click(function(event) {
+            var id = $(this).attr('id');
+            if($('#' + id).find('.description_wrapper').css('display') == 'none') {
+                $('#' + id).find('.description_wrapper').slideDown('slow');
+                console.log("aSDF");
+            }
+            else {
+                $('#' + id).find('.description_wrapper').slideUp();
+                console.log("aSasddDF");
+            }
+        });
+    </script>
 
 </body>
 </html>

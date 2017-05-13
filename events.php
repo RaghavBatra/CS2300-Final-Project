@@ -55,12 +55,6 @@
       		      	<img src='images/Kraft_orange.png' alt='KraftHeinz' class = 'hide'> 
             	</a>
             </div>
-            <div class='prof_wrapper'>
-            	<a href = 'http://galbanicheese.com/our-cheeses/'> 
-      		      	<img src='images/sorrento_grey.jpg' alt='Sorrento'> 
-      		      	<img src='images/sorrento_orange.jpg' alt='Sorrento' class = 'hide'> 
-            	</a>
-            </div>
      	   <div class='prof_wrapper'>
      	   		<a href = 'http://www.anheuser-busch.com/newsroom.html'> 
      	   			<img src='images/Busch_grey.jpg' alt='Anheuser Busch'> 
@@ -81,8 +75,8 @@
             </div>
             <div class='prof_wrapper'>
             	<a href = 'https://ithacahummus.com/press/'> 
-            		<img src='images/hummus_orange.png' alt='Ithaca Hummus'> 
-            		<img src='images/hummus_grey.png' alt='Ithaca Hummus' class = 'hide'> 
+            		<img src='images/hummus_grey.png' alt='Ithaca Hummus'> 
+            		<img src='images/hummus_orange.png' alt='Ithaca Hummus' class = 'hide'> 
             	</a>
             </div>
         </div>

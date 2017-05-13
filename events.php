@@ -28,7 +28,7 @@
             <div class='prof_wrapper'>
 				<a href = 'http://www.mars.com/global/science-and-innovation/science/food-safety'> 
 					<img src = 'images/Mars_grey.jpg' alt = 'Mars'> 
-					<img src = 'images/Mars_orange.png' alt = 'Mars' class = 'hide'> 
+					<img src = 'images/Mars_orange.jpg' alt = 'Mars' class = 'hide'> 
 				</a>
             </div>
             <div class='prof_wrapper'>
@@ -46,13 +46,13 @@
             <div class='prof_wrapper'>
             	<a href = 'http://www.pepsico.com/live/content/type/story'> 
             		<img src='images/pepsico_grey.jpg' alt='PepsiCo'> 
-            		<img src='images/pepsico_orange.png' alt='PepsiCo' class = 'hide'> 
+            		<img src='images/pepsico_orange.jpg' alt='PepsiCo' class = 'hide'> 
             	</a>
             </div>
             <div class='prof_wrapper'>
             	<a href = 'http://www.kraftheinzcompany.com/sustainability.html'> 
     	        	<img src='images/Kraft_grey.jpg' alt='KraftHeinz'> 
-      		      	<img src='images/Kraft_orange.png' alt='KraftHeinz' class = 'hide'> 
+      		      	<img src='images/kraft_orange.png' alt='KraftHeinz' class = 'hide'> 
             	</a>
             </div>
      	   <div class='prof_wrapper'>

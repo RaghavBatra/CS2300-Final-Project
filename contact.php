@@ -1,17 +1,7 @@
 <?php include 'includes/contact_head.php' ?>
 
 <body>
-	
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
- 	 var js, fjs = d.getElementsByTagName(s)[0];
- 	 if (d.getElementById(id)) return;
- 	 js = d.createElement(s); js.id = id;
- 	 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
- 	 fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	</script>
-	
+
     <?php include 'includes/navbar.php'; ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
@@ -51,6 +41,12 @@
 		</form>
 	</div>
 	
+	<iframe src="https://www.facebook.com/plugins/like.php?
+	href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2FCornellFDSCClub%2F&width=50&layo
+	ut=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" 
+	width="50" height="80" style="border:none;" scrolling="no" 
+	frameborder="0" allowTransparency="true"></iframe>
+	
 	<?php
 		if (!empty($_POST)){
 			$name=$_REQUEST['name'];
@@ -67,12 +63,6 @@
         <div id='credits_wrapper'>
             <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>
         </div>
-		<div class="fb-like" 
-			data-href="https://www.facebook.com/groups/CornellFDSCClub/" 
-			data-layout="standard" data-action="like" 
-			data-size="small" data-show-faces="true" 
-			data-share="true">
-		</div>
         <div id='login_wrapper'>
             <div id='login_button'><a href="">Login</a></div>
         </div>

@@ -356,6 +356,7 @@ nav {
 .status {
     color: #ff0000;
     font-size: 1.4em;
+    padding: 1em;
 }
 
 .profile_wrapper select {

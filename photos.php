@@ -105,7 +105,7 @@
     else {
         echo "<form action='' method='post' id='search_form'>
                     <input type='text' name='search' placeholder ='Search'>
-                    <input type='submit' name='submit' value = 'Submit'>    
+                    <input type='submit' name='submit' value = 'Search'>    
         </form>";
         
         $query = "SELECT albumID, title, credits, coverImageFilePath FROM albums WHERE title REGEXP ? ";

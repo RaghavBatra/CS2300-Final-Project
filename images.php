@@ -124,7 +124,7 @@
         }
         
         else {
-            echo " <h2> No images found! </h2>";
+            echo "<div id='empty_image'><h2> No images found! </h2></div>";
         }
     }  
     else {

@@ -19,6 +19,25 @@
     echo "  <div id='subscribe_wrapper'>
                 <div id='subscribe_button'><a href=''>Subscribe</a></div>
             </div>
+            <div id='facebook_wrapper'>
+                <a href='https://www.facebook.com/groups/CornellFDSCClub/'>
+                    <img src='images/facebook.jpg' alt='facebook'>
+                </a>
+            </div>
         </div>
+    </div>
+    <div id='login_window' class='popup'>
+        <form method='post'>
+            <input type='text' name='username' placeholder='Username' required>
+            <input type='password' name='password' placeholder='Password' required>
+            <input type='submit' name='login' value='Login'>
+        </form>
+    </div>
+    <div id='subscribe_window' class='popup'>
+        <form method='post'>
+            <input type='text' name='name' placeholder='Name' required>
+            <input type='text' name='email' placeholder='Email' required>
+            <input type='submit' name='subscribe' value='Subscribe'>
+        </form>
     </div>";
 ?>

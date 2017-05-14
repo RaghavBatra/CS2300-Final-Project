@@ -6,7 +6,7 @@
     }
 
     if(isset($_POST['login'])) { // login username and password were provided
-        $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+        $username = hash("sha256", filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
         $password = hash("sha256", filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING));
         $query = "SELECT * FROM users WHERE username = ? AND hashedPassword = ?";
         $stmt = $mysqli->stmt_init();

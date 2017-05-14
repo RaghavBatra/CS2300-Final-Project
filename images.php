@@ -231,7 +231,8 @@
                             } 
                             echo "</select>
                             <input type='submit' name='delete_image' value='Delete image'>
-                        </form>";
+                        </form>
+                    </div>";
         }
   
     include 'includes/footer.php';

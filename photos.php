@@ -181,7 +181,8 @@
                             } 
                             echo "</select>
                             <input type='submit' name='delete_album' value='Delete album'>
-                        </form>";
+                        </form>
+                    </div>";
         }
     
     include 'includes/footer.php';

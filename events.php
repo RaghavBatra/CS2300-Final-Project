@@ -5,7 +5,7 @@
     <?php 
         require_once 'config.php';
         include 'includes/navbar.php';
-        $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME); 
+        include 'includes/setup.php';
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
@@ -82,26 +82,6 @@
         </div>
     </div>
 
-	<div id='alt_footer' class='section_wrapper'>
-        <div id='credits_wrapper'>
-            <p>&copy; 2017 Cornell Food Science | cufoodsci@cornell.edu</p>
-        </div>
-            
-        <div id='login_wrapper'>
-            <div id='login_button'><a href="">Login</a></div>
-        </div>
-    </div>
-
-    <!--
-        /* Google calendar plugin supports list, day, week, and month views */
-        iframe:
-            Google calendar
-
-        /* jQuery code for onclick events */
-        if event clicked then
-            connect to database
-            query the database for event with same title and date as selected event
-            display information on that event
-    -->
+	<?php include 'includes/footer.php'; ?>
 </body>
 </html>

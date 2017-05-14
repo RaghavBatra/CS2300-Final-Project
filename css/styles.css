@@ -232,7 +232,7 @@ nav {
 }
 
 .popup {
-    bottom: 5.0em;
+    /*bottom: 5.0em;*/
     border: 0.02em solid #000000;
     border-radius: 1.0em;
     display: none;

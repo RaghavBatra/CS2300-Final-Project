@@ -5,7 +5,7 @@
     <?php 
         require_once 'config.php';
         include 'includes/navbar.php';
-        $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
+        include 'includes/setup.php';
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
@@ -184,6 +184,7 @@
                         </form>";
         }
     
+    include 'includes/footer.php';
     $mysqli->close();
     ?>
 

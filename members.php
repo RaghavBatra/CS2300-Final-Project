@@ -5,10 +5,7 @@
     <?php 
         require_once 'config.php';
         include 'includes/navbar.php';
-        $mysqli = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
-        if($mysqli->connect_error) { // terminate script if fail to connect with database
-            die("Connection failed: " . $mysqli->connect_error);
-        }
+        include 'includes/setup.php';
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>

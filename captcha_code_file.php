@@ -39,7 +39,6 @@ $code .= substr($possible_letters, mt_rand(0, strlen($possible_letters)-1), 1);
 $i++;
 }
 
-
 $font_size = $image_height * 0.75;
 $image = @imagecreate($image_width, $image_height);
 
@@ -82,6 +81,8 @@ header('Content-Type: image/jpeg');// defining the image type to be shown in bro
 imagejpeg($image);//showing the image
 imagedestroy($image);//destroying the image instance
 $_SESSION['6_letters_code'] = $code;
+
+
 
 function hexrgb ($hexstr)
 {

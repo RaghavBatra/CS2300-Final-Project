@@ -7,6 +7,7 @@
     	include 'includes/navbar.php'; 
     	include 'includes/setup.php';
     	include 'js/capcha.js';
+    	include 'js/validate_captcha.js';
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
@@ -19,11 +20,6 @@
     </div>
         
 	<div id='main' class='section_wrapper2'>
-		<?php
-		if(!empty($errors)){
-			echo "<p class='err'>".nl2br($errors)."</p>";
-		}
-		?>
 		<form class="cmxform" id="commentForm" method="POST" 
 		action="contact.php" novalidate="novalidate">
 		<fieldset>
@@ -46,11 +42,11 @@
 		</p>
 		<p>
 		<img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
-		<label for='message'>Enter the code above here :</label><br>
-		<input id="6_letters_code" name="6_letters_code" type="text"><br>
-		<small>Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh</small>
+		<label for='message'>Enter the code shown above to enable the submit button below:</label><br>
+		<small>Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh</small><br>
+		<input id="code" name="code" type="text">		
 		</p>
-		<input type="submit" value="Submit" name='submit'>
+		<input id = "submit" type="submit" value="Submit" name='submit' disabled="disabled">
 		</fieldset>
 		</form>
 	</div>
@@ -58,20 +54,9 @@
 	<?php
 	
 		include 'includes/footer.php';
-		
-		$errors = "";
-		
+				
 		if (!empty($_POST)){
-			if(empty($_SESSION['6_letters_code'] ) ||
-   			strcasecmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)
-  			{
-		      //Note: the captcha code is compared case insensitively.
-		      //if you want case sensitive match, update the check above to
-		      // strcmp()
-			  $errors .= "n The captcha code does not match!";
-			}
- 
-		  if($errors == ""){
+
 			$name=$_REQUEST['name'];
 			$email=$_REQUEST['email'];
 			$message=$_REQUEST['comment'];
@@ -79,9 +64,27 @@
 			$from="From: $name<$email>\r\nReturn-path: $email";
 			$subject="Message sent by $name about the food science club!";
 			//mail("cufoodsci.cornell.edu", $subject, $message, $from);
-			}
 		}
 	?>
+	
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("input").keyup(function(){
+	  	$.ajax({
+		    url: "session-check.php",
+    		cache: false
+		}).done(function(newstr) {
+	    	var captchasolve = newstr;
+	      	var code = $("#code").val();
+	      	if (code == captchasolve) { 
+	    		document.getElementById("submit").disabled = false;
+	      	}
+		});
+	});
+});
+</script>
+
 	
 </body>
 </html>

@@ -21,16 +21,23 @@
     
 /* Members page */
 
+	.table_row {
+    	display: block;
+	    float:; left;
+    	padding-bottom: 1.0em;
+    	padding-left: 5px;
+    	padding-right: 5px;
+	    width: 100%;
+	}
+
     .profile_wrapper {
 	    display: inline-block;
 	    padding: 2%;
 	    text-align: center;
     	vertical-align: top;
 	    margin: auto;
-    	width: 29%;
+    	width: auto;
 	}
-	
-	@
 
 }
 

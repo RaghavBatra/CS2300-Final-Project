@@ -22,7 +22,7 @@
         </div>
     </div>
         
-    <? include 'includes/fixed_footer.php' ?>
+    <? include 'includes/footer.php' ?>
 
 </body>
 </html>

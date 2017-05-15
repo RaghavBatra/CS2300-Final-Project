@@ -19,6 +19,11 @@
     </div>
         
 	<div id='main' class='section_wrapper2'>
+		<?php
+		if(!empty($errors)){
+			echo "<p class='err'>".nl2br($errors)."</p>";
+		}
+		?>
 		<form class="cmxform" id="commentForm" method="POST" 
 		action="contact.php" novalidate="novalidate">
 		<fieldset>
@@ -51,9 +56,10 @@
 	</div>
 	
 	<?php
+	
 		include 'includes/footer.php';
 		
-		$errors .= "";
+		$errors = "";
 		
 		if (!empty($_POST)){
 			if(empty($_SESSION['6_letters_code'] ) ||
@@ -65,7 +71,7 @@
 			  $errors .= "n The captcha code does not match!";
 			}
  
-		  if(empty($errors)){
+		  if($errors == ""){
 			$name=$_REQUEST['name'];
 			$email=$_REQUEST['email'];
 			$message=$_REQUEST['comment'];

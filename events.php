@@ -18,7 +18,7 @@
 	        information from any of our partner companies!</h2>
 
 		<iframe src="https://calendar.google.com/calendar/embed?src=cornell.edu_0nicem4o3b27rf2hm9fdks8oj4%40group.calendar.google.com&ctz=America/New_York" 
-		style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+		style="border: 0" width="100%" height="600" frameborder="0" scrolling="no">
 		</iframe>
 		
 	</div>

@@ -1,3 +1,35 @@
+/* mobile optimization */
+
+@media screen and (max-width: 1020px) {
+
+/* navbar overlap */
+
+	#banner_wrapper {
+    	height: 50%;
+    	position: relative;
+	    margin: auto;
+	    padding-top: 320px;
+    }
+    
+/* Events Page */
+	
+
+    
+/* Members page */
+
+    .profile_wrapper {
+	    display: inline-block;
+	    padding: 2%;
+	    text-align: center;
+    	vertical-align: top;
+	    margin: auto;
+    	width: 29%;
+	}
+	
+	@
+
+}
+
 body, html {
     font-family: "Raleway", sans-serif;
     font-size: 100%;
@@ -11,6 +43,7 @@ nav {
     overflow:hidden;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
 }
@@ -293,6 +326,7 @@ nav {
     padding: 2%;
     text-align: center;
     vertical-align: top;
+    margin: auto;
     width: 29%;
 }
 
@@ -308,7 +342,7 @@ nav {
 .profile_wrapper h2 {
     color: #ff0000;
     font-size: 1.6em;
-    margin: 0;
+    margin: auto;
 }
 
 .profile_wrapper h3 {
@@ -553,15 +587,14 @@ h2 span {
     margin: 4% 10% 4% 10%;
 }
 
-/* optimization */
-@media screen and (max-width: 1020px) {
-  #container, #header, #content, #footer {
-    float: none;
-    width: auto;
-  }
- #subtitle, #share, #slider, #sidebar{
-    display:none;
-  }
-  
-p{ font-size: 2em; }
-}
+
+
+/* header */
+
+/* footer */
+
+/* home */
+
+/* events */
+
+/* members */

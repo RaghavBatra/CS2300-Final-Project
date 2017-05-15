@@ -1,6 +1,6 @@
 /* mobile optimization */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 550px) {
 
 /* navbar overlap */
 
@@ -37,6 +37,37 @@
     	vertical-align: top;
 	    margin: auto;
     	width: auto;
+	}
+
+/*	Footer */
+
+	#footer {
+	    background-color:rgba(255, 0, 0, 0.1);
+	    font-size: 1.2em;
+	    position: static;
+	    bottom: 0;
+	}
+
+	#credits_wrapper {
+    	display: inline-block;
+	    padding: 0 1.0em;
+    	width: 100%;
+	}
+
+	#credits_wrapper p {
+    	color: #000000;
+	    font-size: 0.8em;
+    	padding: 0.6em;
+	}
+
+	#buttons_wrapper {
+    	display: inline-block;
+    	width: 100%;
+	}
+
+	#login_wrapper, #logout_wrapper, #subscribe_wrapper, #facebook_wrapper {
+	    padding: 0.6em 1.4em 0.6em 0;
+    	text-align: center;
 	}
 
 }
@@ -182,11 +213,6 @@ nav {
 }
 
 #footer {
-    background-color:rgba(255, 0, 0, 0.1);
-    font-size: 1.2em;
-}
-
-#fixed_footer {
     background-color:rgba(255, 0, 0, 0.1);
     bottom: 0;
     font-size: 1.2em;
@@ -599,14 +625,42 @@ h2 span {
     margin: 4% 10% 4% 10%;
 }
 
+/* Further mobile optimization */
 
+@media screen and (max-width: 550px) {
+	.search_block {
+   		display: inline-block;
+	    margin: 4.5em;
+    	margin-top: 0em;
+		margin: 0 auto;
+	}
+	
+	#footer {
+ 	   background-color:rgba(255, 0, 0, 0.1);
+ 	   font-size: 1.2em;
+ 	   position: static;
+ 	   bottom: 0;
+	}
+	
+	#credits_wrapper {
+    	display: inline-block;
+	    padding: 0 1.0em;
+    	width: 100%;
+	}
 
-/* header */
+	#credits_wrapper p {
+    	color: #000000;
+	    font-size: 0.8em;
+    	padding: 0.6em;
+	}
 
-/* footer */
+	#buttons_wrapper {
+    	display: inline-block;
+    	width: 100%;
+	}
 
-/* home */
-
-/* events */
-
-/* members */
+	#login_wrapper, #logout_wrapper, #subscribe_wrapper, #facebook_wrapper {
+	    padding: 0.6em 1.4em 0.6em 0;
+    	text-align: center;
+	}
+}

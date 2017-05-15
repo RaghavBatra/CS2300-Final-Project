@@ -220,7 +220,7 @@
                     <div class='profile_wrapper'>
                         <form method='post'>
                             <select name='select_delete'>";                        
-                            $query = 'SELECT title FROM images';
+                            $query = "SELECT title FROM images WHERE albumID = $album";
                             $result = $mysqli->query($query);
                             while ($row = $result->fetch_assoc()) {
                                 $title = $row['title'];

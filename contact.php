@@ -7,7 +7,6 @@
     	include 'includes/navbar.php'; 
     	include 'includes/setup.php';
     	include 'js/capcha.js';
-    	include 'js/validate_captcha.js';
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>

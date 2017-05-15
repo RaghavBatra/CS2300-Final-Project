@@ -13,7 +13,11 @@
     
 /* Events Page */
 	
-
+	#companies_wrapper{
+		visibility: hidden;
+		clear: both;
+		display: none;
+	}
     
 /* Members page */
 

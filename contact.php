@@ -53,6 +53,8 @@
 	<?php
 		include 'includes/footer.php';
 		
+		$errors .= "";
+		
 		if (!empty($_POST)){
 			if(empty($_SESSION['6_letters_code'] ) ||
    			strcasecmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)

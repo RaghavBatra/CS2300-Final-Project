@@ -27,8 +27,8 @@
         <div class='table_row'>
             <div class='prof_wrapper'>
 				<a href = 'http://www.mars.com/global/science-and-innovation/science/food-safety'> 
-					<img src = 'images/Mars_grey.jpg' alt = 'Mars'> 
-					<img src = 'images/Mars_orange.jpg' alt = 'Mars' class = 'hide'> 
+					<img src = 'images/Mars_Grey.png' alt = 'Mars'> 
+					<img src = 'images/Mars_Orange.png' alt = 'Mars' class = 'hide'> 
 				</a>
             </div>
             <div class='prof_wrapper'>
@@ -51,8 +51,8 @@
             </div>
             <div class='prof_wrapper'>
             	<a href = 'http://www.kraftheinzcompany.com/sustainability.html'> 
-    	        	<img src='images/Kraft_grey.jpg' alt='KraftHeinz'> 
-      		      	<img src='images/kraft_orange.png' alt='KraftHeinz' class = 'hide'> 
+    	        	<img src='images/Kraft_Grey.png' alt='KraftHeinz'> 
+      		      	<img src='images/kraft_Orange.png' alt='KraftHeinz' class = 'hide'> 
             	</a>
             </div>
      	   <div class='prof_wrapper'>
@@ -63,8 +63,8 @@
         	</div>
             <div class='prof_wrapper'>
             	<a href = 'https://www.walmart.com/store/5240/whats-new'> 
-            		<img src='images/walmart_grey.jpg' alt='Walmart'> 
-            		<img src='images/walmart_orange.jpg' alt='Walmart' class = 'hide'> 
+            		<img src='images/Walmart_Grey.png' alt='Walmart'> 
+            		<img src='images/Walmart_Orange.png' alt='Walmart' class = 'hide'> 
             	</a>
             </div>
             <div class='prof_wrapper'>

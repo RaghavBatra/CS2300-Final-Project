@@ -6,6 +6,7 @@
     	require_once 'config.php';
     	include 'includes/navbar.php'; 
     	include 'includes/setup.php';
+    	include 'js/capcha.js';
     ?>
 
     <div id='banner_wrapper' class='section_wrapper'>
@@ -39,22 +40,30 @@
 		<textarea id="ccomment" name="comment" required="" aria-required="true"></textarea>
 		</p>
 		<p>
-		<input class="submit" type="submit" value="Send">
+		<img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
+		<label for='message'>Enter the code above here :</label><br>
+		<input id="6_letters_code" name="6_letters_code" type="text"><br>
+		<small>Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh</small>
 		</p>
+		<input type="submit" value="Submit" name='submit'>
 		</fieldset>
 		</form>
 	</div>
 	
-	<!-- <iframe src="https://www.facebook.com/plugins/like.php?
-	href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2FCornellFDSCClub%2F&width=50&layo
-	ut=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" 
-	width="50" height="80" style="border:none;" scrolling="no" 
-	frameborder="0" allowTransparency="true"></iframe> -->
-	
 	<?php
 		include 'includes/footer.php';
-
+		
 		if (!empty($_POST)){
+			if(empty($_SESSION['6_letters_code'] ) ||
+   			strcasecmp($_SESSION['6_letters_code'], $_POST['6_letters_code']) != 0)
+  			{
+		      //Note: the captcha code is compared case insensitively.
+		      //if you want case sensitive match, update the check above to
+		      // strcmp()
+			  $errors .= "n The captcha code does not match!";
+			}
+ 
+		  if(empty($errors)){
 			$name=$_REQUEST['name'];
 			$email=$_REQUEST['email'];
 			$message=$_REQUEST['comment'];
@@ -62,6 +71,7 @@
 			$from="From: $name<$email>\r\nReturn-path: $email";
 			$subject="Message sent by $name about the food science club!";
 			//mail("cufoodsci.cornell.edu", $subject, $message, $from);
+			}
 		}
 	?>
 	

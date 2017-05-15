@@ -14,7 +14,8 @@
     </div>
 
     <div id='welcome_wrapper' class='section_wrapper'>
-        <h2>Check out our calendar of events!</h2>
+        <h2>Check out our calendar of events or view relevant
+	        information from any of our partner companies!</h2>
 
 		<iframe src="https://calendar.google.com/calendar/embed?src=cornell.edu_0nicem4o3b27rf2hm9fdks8oj4%40group.calendar.google.com&ctz=America/New_York" 
 		style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
@@ -23,7 +24,6 @@
 	</div>
 	
 	<div id="companies_wrapper" class='company_wapper'>
-        <h2>Click Below View Relevant Information From Any of Our Partner Companies!</h2>
         <div class='table_row'>
             <div class='prof_wrapper'>
 				<a href = 'http://www.mars.com/global/science-and-innovation/science/food-safety'> 

@@ -449,6 +449,8 @@ nav {
     text-align: center;
     margin-bottom: 0em;
     background-color: rgba(255, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
 }
 
 #search_grid {

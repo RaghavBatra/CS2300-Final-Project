@@ -81,6 +81,8 @@ nav {
 
 #banner_wrapper {
     height: 50%;
+    position: relative;
+    margin: auto;
 }
 
 #banner_wrapper img {

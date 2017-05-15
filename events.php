@@ -52,7 +52,7 @@
             <div class='prof_wrapper'>
             	<a href = 'http://www.kraftheinzcompany.com/sustainability.html'> 
     	        	<img src='images/Kraft_Grey.png' alt='KraftHeinz'> 
-      		      	<img src='images/kraft_Orange.png' alt='KraftHeinz' class = 'hide'> 
+      		      	<img src='images/Kraft_Orange.png' alt='KraftHeinz' class = 'hide'> 
             	</a>
             </div>
      	   <div class='prof_wrapper'>

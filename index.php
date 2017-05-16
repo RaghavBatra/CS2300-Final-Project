@@ -13,6 +13,10 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
+    <?php
+        include 'includes/login.php';
+    ?>
+
     <div id='welcome_wrapper' class='section_wrapper'>
         <h2>Welcome to the</h2>
         <h1>Cornell Food Science Club</h1>

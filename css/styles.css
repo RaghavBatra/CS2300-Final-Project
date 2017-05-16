@@ -526,10 +526,15 @@ h2 span {
     opacity: 0.75;
 }
 
-.error_wrapper {
+.lerror_wrapper {
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
     margin: auto;
     padding: 2.0em 0;
-    width: 80%;
+    position: absolute;
+    top: 20%;
+    background-color: rgba(255, 0, 0, 0.1);
 }
 
 /* Companies Wrapper */

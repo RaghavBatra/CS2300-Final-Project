@@ -1,6 +1,6 @@
 /* mobile optimization */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
 
 /* navbar overlap */
 
@@ -62,7 +62,7 @@
 	}
 	
 	#buttons_wrapper {
-		visibility: hidden;
+		display: none;
 	}
 	
 	#login_wrapper, #logout_wrapper, #subscribe_wrapper, #facebook_wrapper {

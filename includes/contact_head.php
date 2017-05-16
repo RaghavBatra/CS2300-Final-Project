@@ -23,10 +23,8 @@ echo "<!doctype html>
     <link rel='stylesheet' type='text/css' href='css/styles.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
     <link rel='stylesheet' href='css/lightbox.css'>
-    <link rel='stylesheet' href='css/screen.css'>
     
     <script>
-    
 	$.validator.setDefaults({
 		submitHandler: function() {
 			alert('Thanks for reaching out! We\'ll get back to you as soon as possible.');

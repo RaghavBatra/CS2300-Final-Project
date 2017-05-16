@@ -14,7 +14,7 @@
     function display_navbar($navbar_items) {
         echo "<nav>
             <div id='logo_wrapper'>
-                <p>Cornell Food Science Club</p>
+                <p><a href='index.php'>Cornell Food Science Club</a></p>
             </div>
             <div id='nav_wrapper'>
                 <ul>";

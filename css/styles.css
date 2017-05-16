@@ -29,6 +29,11 @@ nav {
     padding: 1.0em 2.0em 1.0em 2.0em;
 }
 
+#logo_wrapper p a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
 #nav_wrapper {
     float: right;
     width: 70%;

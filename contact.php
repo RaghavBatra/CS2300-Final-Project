@@ -37,7 +37,7 @@
 		</p>
 		<p>
 		<label for="ccomment">Your message:</label> <br>
-		<textarea id="ccomment" name="comment" required="" aria-required="true"></textarea>
+		<textarea id="ccomment" name="comment" required="" aria-required="true" rows='10';></textarea>
 		</p>
 		<p>
 		<img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id='captchaimg' ><br>
@@ -45,7 +45,7 @@
 		<small>Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh</small><br>
 		<input id="code" name="code" type="text">		
 		</p>
-		<input id = "submit" type="submit" value="Submit" name='submit' disabled="disabled">
+		<input id="submit" type="submit" value="Send" name='submit' disabled="disabled">
 		</fieldset>
 		</form>
 	</div>

@@ -101,7 +101,7 @@
             $result = $mysqli->query($query);
             $names = array();
             $column_count = 0;
-            echo "<div class='table_row'>";
+            echo "<div class='table'><div class='table_row'>";
             while($row = $result->fetch_assoc()) {
                 if($column_count === 3) {
                     $column_count = 0;
@@ -121,7 +121,9 @@
                     <h4>Class of $year</h4>
                     <div class='description_wrapper'>$description</div>
                 </div>";
+                $column_count++;
             }
+            echo "</div></div>";
 
             if(isset($_SESSION['logged_user'])) {
                 echo "</div><div class='table_row'>
@@ -164,6 +166,28 @@
                     </div>";
             }   
             echo '</div></div>';
+
+            /* mobile version single list */
+            $result = $mysqli->query($query);
+            $names = array();
+            echo "<div id='mobile_members'>";
+            while($row = $result->fetch_assoc()) {
+                $id = $row['id'];
+                $name = $row['executive'];
+                $names[$id] = $name;
+                $title = $row['title'];
+                $year = $row['grad_year'];
+                $description = $row['description'];
+                $image_url = 'images/' . $row['image_url'];
+                echo "<div id='$id' class='mobile_profile_wrapper'>
+                    <img src='$image_url' alt='$name'>
+                    <h2>$name</h2>
+                    <h3>$title</h3>
+                    <h4>Class of $year</h4>
+                    <div class='mobile_description_wrapper'>$description</div>
+                </div>";
+            }
+            echo '</div>';
 
             include 'includes/footer.php';
         ?>

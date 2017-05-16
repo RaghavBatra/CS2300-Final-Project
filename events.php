@@ -13,8 +13,8 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
-    <div id='welcome_wrapper' class='section_wrapper'>
-        <h2>Check out our calendar of events or view relevant
+    <div id='events_dummy_wrapper' class='section_wrapper'>
+        <h2>Check out our calendar or view relevant
 	        information from any of our partner companies!</h2>
 
 		<iframe src="https://calendar.google.com/calendar/embed?src=cornell.edu_0nicem4o3b27rf2hm9fdks8oj4%40group.calendar.google.com&ctz=America/New_York" 

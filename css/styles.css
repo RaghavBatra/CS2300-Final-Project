@@ -686,15 +686,14 @@ h2 span {
 /* Members page */
     
     .table {
-        display: none ;
+        display: none;
     }
 
     #mobile_members {
-        display: block ;
+        display: block;
+        text-align: center;
     }
 
-    
-    
 /* Footer */
     
     #footer {

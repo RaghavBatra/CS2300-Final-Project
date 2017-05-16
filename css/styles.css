@@ -38,6 +38,36 @@
 	    margin: auto;
     	width: auto;
 	}
+	
+/* Footer */
+	
+	#footer {
+	    background-color:rgba(255, 0, 0, 0.1);
+   		bottom: 0;
+	    position: static;
+    	font-size: 1.2em;
+	}
+	
+	#credits_wrapper {
+    	display: inline-block;
+    	padding: 0 1.0em;
+	   	width: 100%;
+	}
+
+	#credits_wrapper p {
+    	color: #000000;
+    	font-size: 0.8em;
+    	padding: 0.6em;
+    	text-align: center;
+	}
+	
+	#buttons_wrapper {
+		visibility: hidden;
+	}
+	
+	#login_wrapper, #logout_wrapper, #subscribe_wrapper, #facebook_wrapper {
+		display: none;
+	}
 
 }
 
@@ -604,3 +634,5 @@ h2 span {
     	margin-top: 0em;
 		margin: 0 auto;
 	}
+	
+	

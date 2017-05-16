@@ -13,6 +13,10 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
+    <?php
+        include 'includes/login.php';
+    ?>
+
     <div id='dummy_wrapper' class='section_wrapper'>
         <h2>Photos</h2>
     </div>

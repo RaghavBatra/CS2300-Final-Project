@@ -14,6 +14,10 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
+    <?php
+        include 'includes/login.php';
+    ?>
+
     <div id='contact_wrapper' class='section_wrapper'>
         <h2>Contact us!</h2>
     </div>
@@ -54,8 +58,7 @@
 	
 		include 'includes/footer.php';
 				
-		if (!empty($_POST)){
-
+		if (isset($_POST['submit'])){
 			$name=$_REQUEST['name'];
 			$email=$_REQUEST['email'];
 			$message=$_REQUEST['comment'];

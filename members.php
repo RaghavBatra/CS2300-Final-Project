@@ -8,10 +8,15 @@
         include 'includes/setup.php';
     ?>
 
+
     <div id='banner_wrapper' class='section_wrapper'>
         <!-- Image adapted from http://www.icfsne.com/2016/home -->
         <img src='images/banner.jpg' alt='banner'>
     </div>
+
+    <?php
+        include 'includes/login.php';
+    ?>
 
     <div id="executives_wrapper" class='section_wrapper'>
         <h1>Executive Board</h1>

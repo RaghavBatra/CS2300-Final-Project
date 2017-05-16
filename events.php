@@ -13,6 +13,10 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
+    <?php
+        include 'includes/login.php';
+    ?>
+
     <div id='events_dummy_wrapper' class='section_wrapper'>
         <h2>Check out our calendar or view relevant
 	        information from any of our partner companies!</h2>

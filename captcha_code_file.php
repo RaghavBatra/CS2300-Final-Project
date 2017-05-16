@@ -20,7 +20,7 @@ session_start();
 $image_width = 120;
 $image_height = 40;
 $characters_on_image = 6;
-$font = './monofont.ttf';
+$font = 'fonts/monofont.ttf';
 
 //The characters that can be used in the CAPTCHA code.
 //avoid confusing characters (l 1 and i for example)

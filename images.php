@@ -19,6 +19,13 @@
 
     <?php
     $album = $_GET['albumID'];
+    $dummy_query = "SELECT * FROM albums WHERE albumID = $album";
+    $dummy_result = $mysqli->query($dummy_query);
+    $num_rows = $dummy_result->num_rows;
+    if (!is_numeric($album) or is_float($album) or ($num_rows === 0)) {
+            header('Location: not_found.php');
+    }
+    
     echo "<form action='' method='post' id='search_form'>
                     <input type='text' name='search' placeholder ='Search'>
                     <input type='submit' name='submit' value = 'Submit'>    

@@ -23,4 +23,13 @@ $(document).ready(function() {
         else
             $('#subscribe_window').css('display', 'none');
     });
+
+    $('#nav_icon').on('click', function(event) {
+        if($('#drop_down').css('display') == 'none') {
+            $('#drop_down').slideDown('slow');
+        }
+        else {
+            $('#drop_down').slideUp('slow');
+        }
+    });
 });

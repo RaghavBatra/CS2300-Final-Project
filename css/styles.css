@@ -669,9 +669,92 @@ h2 span {
     text-align: center;
     width: 80%;
 }
+
+#mobile_nav {
+    display: none;
+}
 /* Further mobile optimization */
 
 /* mobile optimization */
+
+@media screen and (max-width: 980px) {
+    #subscribe_wrapper {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #mobile_nav {
+        display: block;
+        width: 100%;
+        box-shadow: 0 .04em #d3d3d3;
+        overflow:hidden;
+    }
+
+    #top_wrapper {
+        display: block;
+        color: #ff0000;
+        margin: 0;
+        width: 100%;
+    }
+
+    #top_wrapper p {
+        float: left;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0.8em 0 0.8em 2.0em;
+    }
+
+    #top_wrapper p a {
+        text-decoration: none;
+        color: #ff0000;
+    }
+
+    #dummy {
+        visibility: hidden;
+    }
+
+    #nav_icon, #dummy {
+        text-align: center;
+        display: table;
+        padding: 0.6em 0;
+    }
+
+    #nav_icon {
+        float: right;
+    }
+
+    #nav_icon img, #dummy img {
+        display: table-cell;
+        vertical-align: center;
+        height: 3.0em;
+        width: auto;
+        padding: 0.8em 2.0em 0.8em 0;
+    }
+
+    #drop_down {
+        display: block;
+        width: 100%;
+        display: none;
+    }
+
+    .drop_down_item {
+        display: block;
+        width: 100%;
+        box-shadow: 0 .04em #d3d3d3;
+        padding: 1.0em 0 1.0em 0;
+        text-align: right;
+    }
+
+    .drop_down_item a {
+        
+        color: #ff0000;
+        padding-right: 2.0em;
+        text-decoration: none;
+    }
+}
 
 @media screen and (max-width: 550px) {
 
@@ -684,12 +767,6 @@ h2 span {
 
 /* navbar overlap */
 
-    #banner_wrapper {
-        height: 50%;
-        position: relative;
-        margin: auto;
-        padding-top: 320px;
-    }
     
 /* Events Page */
     

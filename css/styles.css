@@ -312,12 +312,12 @@ nav {
 
 /* About Us */
 
-#about_wrapper {
+.about_wrapper {
     color: #ff0000;
     background-color: #ffffff;
 }
 
-#about_wrapper h1 {
+.about_wrapper h1 {
     font-size: 2.0em;
     font-weight: bold;
     margin: auto;
@@ -325,7 +325,7 @@ nav {
     width: 86%;
 }
 
-#about_wrapper h2 {
+.about_wrapper h2 {
     color: #000000;
     font-size: 1.4em;
     line-height: 1.6em;
@@ -334,8 +334,22 @@ nav {
     width: 86%;
 }
 
-#about_wrapper h2 span {
+.about_wrapper h2 span {
     color: #ff0000;
+}
+
+#red_background {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.about_wrapper a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.about_wrapper a:hover {
+    color: #3366ff;
+    transition: 0.4s ease;
 }
 
 /* Members */

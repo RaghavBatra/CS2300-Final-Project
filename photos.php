@@ -13,7 +13,7 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
-    <div id='welcome_wrapper' class='section_wrapper'>
+    <div id='dummy_wrapper' class='section_wrapper'>
         <h2>Photo gallery</h2>
     </div>
 
@@ -139,7 +139,7 @@
         }
         
         else {
-            echo " <h2> No results! </h2>";
+            echo "<div class='error_wrapper'><h2>No results match your search!</h2></div>";
         }
     }
         

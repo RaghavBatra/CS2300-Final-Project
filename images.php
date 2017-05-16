@@ -13,8 +13,8 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
-    <div id='welcome_wrapper' class='section_wrapper'>
-        <h2>Images</h2>
+    <div id='dummy_wrapper' class='section_wrapper'>
+        <h2>Photos</h2>
     </div>
 
     <?php
@@ -124,7 +124,7 @@
         }
         
         else {
-            echo "<div id='empty_image'><h2> No images found! </h2></div>";
+            echo "<div class='error_wrapper'><h2>No photos in this album!</h2></div>";
         }
     }  
     else {
@@ -183,7 +183,7 @@
         }
         
         else {
-            echo " <h2> No images found </h2>";
+            echo "<div class='error_wrapper'><h2>No results match your search!</h2></div>";
         }
     }
     

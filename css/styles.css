@@ -39,14 +39,14 @@
     	width: auto;
 	}
 
-/*	Footer */
+/*	Footer 
 
 	#footer {
 	    background-color:rgba(255, 0, 0, 0.1);
 	    font-size: 1.2em;
 	    position: static;
 	    bottom: 0;
-	}
+	}*/
 
 	#credits_wrapper {
     	display: inline-block;
@@ -219,8 +219,8 @@ nav {
 #footer {
     background-color:rgba(255, 0, 0, 0.1);
     bottom: 0;
-    font-size: 1.2em;
     position: fixed;
+    font-size: 1.2em;
 }
 
 #credits_wrapper {

@@ -659,12 +659,16 @@ h2 span {
 
 @media screen and (max-width: 550px) {
 
+    /*nav {
+        display: none;
+    }
+
     .search_block {
         display: inline-block;
         margin: 4.5em;
         margin-top: 0em;
         margin: 0 auto;
-    }
+    }*/
 
 /* navbar overlap */
 
@@ -690,8 +694,9 @@ h2 span {
     }
 
     #mobile_members {
-        display: block;
+        width: 100%;
         text-align: center;
+        display: block;
     }
 
 /* Footer */
@@ -704,24 +709,19 @@ h2 span {
     
     #credits_wrapper {
         display: inline-block;
-        padding: 0 1.0em;
+        text-align: center;
+        padding: 1.0em 0;
         width: 100%;
     }
 
     #credits_wrapper p {
+        margin: 0;
         color: #000000;
         font-size: 0.8em;
-        padding: 0.6em;
-        text-align: center;
     }
     
     #buttons_wrapper {
         display: none;
     }
-    
-    #login_wrapper, #logout_wrapper, #subscribe_wrapper, #facebook_wrapper {
-        display: none;
-    }
-
 }
 	

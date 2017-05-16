@@ -689,7 +689,7 @@ h2 span {
     #mobile_nav {
         display: block;
         width: 100%;
-        box-shadow: 0 .04em #d3d3d3;
+        border-bottom: solid 0.04em #d3d3d3;
         overflow:hidden;
     }
 
@@ -734,10 +734,16 @@ h2 span {
         padding: 0.8em 2.0em 0.8em 0;
     }
 
+    #dummy img {
+        width: 1px;
+        padding: 0;
+    }
+
     #drop_down {
         display: block;
         width: 100%;
         display: none;
+        overflow: hidden;
     }
 
     .drop_down_item {
@@ -813,4 +819,15 @@ h2 span {
         display: none;
     }
 }
-	
+
+@media screen and (max-width: 360px) {
+
+    #top_wrapper p {
+        padding-left: 1.0em;
+    }
+
+    #nav_icon img {
+        padding-right: 1.0em;
+    }
+
+}

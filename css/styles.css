@@ -446,6 +446,12 @@ nav {
     margin: 0.75em;
 }
 
+.profile_wrapper select {
+    padding: 0.4em;
+    margin-bottom: 0.4em;
+    width: 80%;
+}
+
 .status {
     color: #ff0000;
     font-size: 1.4em;

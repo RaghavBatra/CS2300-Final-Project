@@ -13,6 +13,10 @@
         <img src='images/banner.jpg' alt='banner'>
     </div>
 
+    <?php
+        include 'includes/login.php';
+    ?>
+
     <div class='about_wrapper section_wrapper'>
         <h1>Who are we?</h1>
         <h2>We are a community of Cornell University students who are 

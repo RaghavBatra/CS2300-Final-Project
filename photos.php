@@ -161,7 +161,7 @@
                         $result = $mysqli->query($query);
                         while ($row = $result->fetch_assoc()) {
                             $title = $row['title'];
-                            echo "<option value = $title> $title </option>";
+                            echo "<option value = '$title'> $title </option>";
                         }
                         echo "</select>
                             <input type='file' name='newalbum' required>
@@ -177,7 +177,7 @@
                             $result = $mysqli->query($query);
                             while ($row = $result->fetch_assoc()) {
                                 $title = $row['title'];
-                                echo "<option value = $title> $title </option>";
+                                echo "<option value = '$title'> $title </option>";
                             } 
                             echo "</select>
                             <input type='submit' name='delete_album' value='Delete album'>

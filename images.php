@@ -208,7 +208,7 @@
                         <form method='post' enctype='multipart/form-data'>
                         <select name='select_edit'>";
     
-                        $query = "SELECT title FROM images WHERE albumID = $album";
+                        $query = "SELECT title FROM images WHERE imageID IN (SELECT imageID FROM link WHERE albumID = $album)";
                         $result = $mysqli->query($query);
                         while ($row = $result->fetch_assoc()) {
                             $title = $row['title'];
@@ -227,7 +227,7 @@
                     <div class='profile_wrapper'>
                         <form method='post'>
                             <select name='select_delete'>";                        
-                            $query = "SELECT title FROM images WHERE albumID = $album";
+                            $query = "SELECT title FROM images WHERE imageID IN (SELECT imageID FROM link WHERE albumID = $album)";
                             $result = $mysqli->query($query);
                             while ($row = $result->fetch_assoc()) {
                                 $title = $row['title'];
